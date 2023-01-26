@@ -1,17 +1,16 @@
 import { container, item } from '@/animations/animations';
 import {
-    Box,
     Container,
     List,
     ListItemButton,
     ListItemText,
     Typography,
 } from '@mui/material';
-import { purple } from '@mui/material/colors';
+import { pink } from '@mui/material/colors';
 import { motion as m } from 'framer-motion';
 import React from 'react';
 
-const Home = () => {
+const ContactUs = () => {
     return (
         <m.div
             initial={{ y: '100%' }}
@@ -20,7 +19,7 @@ const Home = () => {
             exit={{ opacity: 1 }}
             style={{
                 height: '100vh',
-                backgroundColor: purple[500],
+                backgroundColor: pink[500],
                 position: 'absolute',
                 inset: 0,
                 display: 'grid',
@@ -36,7 +35,7 @@ const Home = () => {
                         transition={{ duration: 0.5, delay: 0.5 }}
                     >
                         <Typography variant="h3" textAlign="center">
-                            Home Page
+                            Contact Page
                         </Typography>
                     </m.div>
                 </div>
@@ -77,4 +76,4 @@ const Home = () => {
     );
 };
 
-export default Home;
+export default ContactUs;
